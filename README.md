@@ -89,7 +89,7 @@ ScrollView {
 
 ## Documentation
 
-The [documentation](https://swiftpackageindex.com/RelativeJoe/ScrollUI/master/documentation/scrollui) is provided by [swiftpackageindex](https://swiftpackageindex.com).
+The [documentation](https://swiftpackageindex.com/SwiftyJoeyy/ScrollUI/master/documentation/scrollui) is provided by [swiftpackageindex](https://swiftpackageindex.com).
 
 
 ## Dependencies
