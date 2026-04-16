@@ -26,7 +26,7 @@ internal struct ScrollViewStyleModifider<Style: ScrollViewStyle>: ViewModifier {
         content
             .introspect(
                 .scrollView,
-                on: .iOS(.v13, .v14, .v15, .v16, .v17, .v18)
+                on: .iOS(.v13, .v14, .v15, .v16, .v17, .v18, .v26)
             ) { scrollView in
                 Task { @MainActor in
                     style.update(scrollView)
