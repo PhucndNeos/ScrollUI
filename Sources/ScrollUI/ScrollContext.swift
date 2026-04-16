@@ -11,16 +11,32 @@ import Foundation
 public struct ScrollContext: Equatable, Hashable, Sendable {
     /// The geometry of the scroll view at the time of the scroll phase change.
     public var geometry = ScrollGeometry()
-    
+
     /// The velocity of the scroll view at the time of the scroll phase change.
     public var velocity: CGVector?
+
+    public init(
+        geometry: ScrollGeometry = ScrollGeometry(),
+        velocity: CGVector? = nil
+    ) {
+        self.geometry = geometry
+        self.velocity = velocity
+    }
 }
 
 /// A type that defines the geometry of a scroll view.
 public struct ScrollGeometry: Equatable, Hashable, Sendable {
     /// The content offset of the scroll view.
     public var contentOffset = CGPoint.zero
-    
+
     /// The size of the content of the scroll view.
     public var contentSize = CGSize.zero
+
+    public init(
+        contentOffset: CGPoint = CGPoint.zero,
+        contentSize: CGSize = CGSize.zero
+    ) {
+        self.contentOffset = contentOffset
+        self.contentSize = contentSize
+    }
 }
